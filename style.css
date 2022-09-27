@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Nunito+Sans:wght@700&family=Tai+Heritage+Pro&display=swap');
+/* 
+Potential Color Scheme (Could Change Later)
+Dark Navy Blue: #00005a
+Perfect Grey: #969696
+White: #ffffff
+Light Blue: #88a4dd
+Fonts:
+"Dosis"
+"Nunito Sans"
+"Tai Heritage Pro"
+*/
+* {
+    text-align: center;
+    color: #00005a;
+}
+html {
+    background-color: #969696;
+}
+body {
+    background-color: #88a4dd;
+    width: 66%;
+    margin: auto;
+}
+h1 {
+    background-color: #88a4dd;
+    font-family: "Dosis";
+    font-size: 60px;
+}
+h2 {
+    font-family: "Nunito Sans";
+    font-size: 40px;
+}
+nav {
+    margin: auto;
+    background-color: #88a4dd;
+}
+ul {
+    padding: 0px;
+    list-style-type: none;
+    margin: auto;
+    display: inline;
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+li {
+    margin: auto;
+    padding: 0px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+a {
+    font-family: "Dosis";
+}
+a:hover {
+    color: white;
+}
+p {
+    width: 500px;
+    margin: 20px auto 50px auto;
+    font-family: "Tai Heritage Pro";
+ }
+ .introduction h3 {
+    font-size: 25px;
+ }
+ .introduction p {
+    font-size: 20px;
+ }
+
+
+
