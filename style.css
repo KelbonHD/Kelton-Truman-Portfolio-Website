@@ -12,18 +12,25 @@ Fonts:
 */
 * {
     text-align: center;
-    color: #00005a;
+    color: #4e6d9e;
 }
 html {
-    background-color: #969696;
+        /*First time doing parallax!*/
+        background-image: url(./All\ Media/Home/parallax.jpg);
+        padding: 0px;
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 body {
-    background-color: #88a4dd;
+    background-color: #fcf6f5;
     width: 66%;
     margin: auto;
 }
 h1 {
-    background-color: #88a4dd;
     font-family: "Dosis";
     font-size: 60px;
 }
@@ -31,9 +38,11 @@ h2 {
     font-family: "Nunito Sans";
     font-size: 40px;
 }
+h4  {
+    font-size: 20px;
+}
 nav {
     margin: auto;
-    background-color: #88a4dd;
 }
 ul {
     padding: 0px;
@@ -56,10 +65,10 @@ a {
     font-family: "Dosis";
 }
 a:hover {
-    color: white;
+    color: lightblue;
 }
 p {
-    width: 500px;
+    width: 750px;
     margin: 20px auto 50px auto;
     font-family: "Tai Heritage Pro";
  }
@@ -69,6 +78,27 @@ p {
  .introduction p {
     font-size: 20px;
  }
+ .about img {
+    width: auto;
+    height: 350px;
+ }
+ .projects img {
+    width: auto;
+    height: 350px;
+ }
+.parallax {
 
-
-
+ }
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+}
+.contact img {
+    width: auto;
+    height: 50px;
+}
