@@ -11,8 +11,11 @@ Fonts:
 "Tai Heritage Pro"
 */
 * {
+    margin: 0;
+    padding: 0;
     text-align: center;
     color: #4e6d9e;
+    box-sizing: border-box;
 }
 html {
         /*First time doing parallax!*/
@@ -25,7 +28,15 @@ html {
         background-repeat: no-repeat;
         background-size: cover;
 }
+header {
+    width: 100%;
+    padding-top: 30px;
+}
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #fcf6f5;
     width: 66%;
     margin: auto;
@@ -33,10 +44,12 @@ body {
 h1 {
     font-family: "Dosis";
     font-size: 60px;
+    margin: auto;
 }
 h2 {
-    font-family: "Nunito Sans";
+    font-family: "Dosis";
     font-size: 40px;
+    padding: 30px 0px;
 }
 h4  {
     font-size: 20px;
@@ -44,25 +57,14 @@ h4  {
 nav {
     margin: auto;
 }
-ul {
-    padding: 0px;
-    list-style-type: none;
-    margin: auto;
-    display: inline;
-    width: 100%;
-    text-align: center;
-    justify-content: space-evenly;
-    align-items: center;
-}
 li {
-    margin: auto;
-    padding: 0px;
-    font-size: 20px;
-    width: 100%;
-    text-align: center;
+    list-style: none;
+    padding: 0px 30px;
+    font-size: 30px;
 }
 a {
     font-family: "Dosis";
+    text-decoration: none;
 }
 a:hover {
     color: lightblue;
@@ -71,6 +73,19 @@ p {
     width: 750px;
     margin: 20px auto 50px auto;
     font-family: "Tai Heritage Pro";
+ }
+ .navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+ }
+ .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
  }
  .introduction h3 {
     font-size: 25px;
@@ -81,13 +96,12 @@ p {
  .about img {
     width: auto;
     height: 350px;
+    border-radius: 5px;
  }
  .projects img {
     width: auto;
     height: 350px;
- }
-.parallax {
-
+    border-radius: 5px;
  }
 .contacts{
     display: flex;
@@ -101,4 +115,57 @@ p {
 .contact img {
     width: auto;
     height: 50px;
+    transition: height 0.2s;
+}
+.contact img:hover {
+    height: 60px;
+}
+.toggleNav {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background: #fcf6f5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.toggleNav span {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #4e6d9e;
+    border-radius: 5px;
+    transition: 0.15s;
+}
+.toggleNav span:nth-child(1) {
+    transform: translateY(-10px);
+    width: 20px;
+    left: 10px;
+}
+.toggleNav span:nth-child(2) {
+    width: 30px;
+    left: 10px;
+}
+.toggleNav span:nth-child(3) {
+    transform: translateY(10px);
+    width: 40px;
+}
+.toggleNav.active span:nth-child(1) {
+    width: 40px;
+    transform: translateY(0px) rotate(45deg);
+}
+.toggleNav.active span:nth-child(2) {
+    transform: translateX(60px);
+    opacity: 0;
+}
+.toggleNav.active span:nth-child(3) {
+    transform: translateY(0px) rotate(-45deg);
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
