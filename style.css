@@ -42,14 +42,18 @@ body {
     margin: auto;
 }
 h1 {
-    font-family: "Dosis";
+    font-family: "Dosis", "Geneva", "Arial";
     font-size: 60px;
     margin: auto;
 }
 h2 {
-    font-family: "Dosis";
+    font-family: "Dosis", "Geneva", "Arial";
     font-size: 40px;
     padding: 30px 0px;
+}
+h3 {
+    font-family: "Tai Heritage Pro", "Times New Roman";
+    font-size: 30px;
 }
 h4  {
     font-size: 20px;
@@ -63,7 +67,7 @@ li {
     font-size: 30px;
 }
 a {
-    font-family: "Dosis";
+    font-family: "Dosis", "Geneva", "Arial";
     text-decoration: none;
 }
 a:hover {
@@ -72,20 +76,27 @@ a:hover {
 p {
     width: 750px;
     margin: 20px auto 50px auto;
-    font-family: "Tai Heritage Pro";
+    font-family: "Nunito Sans", "Times New Roman";
  }
  .navbar {
     min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 0px 30px;
  }
  .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 30px;
+ }
+ .navlink {
+    transition: 0.7s ease;
+    font-size: 40px;
+ }
+ .navlink:hover {
+    font-size: 40px;
  }
  .introduction h3 {
     font-size: 25px;
@@ -127,7 +138,7 @@ p {
     background: #fcf6f5;
     box-shadow: 0 10px 20px rgba(0,0,0,0.08);
     border-radius: 20px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -168,4 +179,59 @@ p {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+@media(max-width:1100px){
+    body {
+        width: 100%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    p {
+        max-width: 700px;
+    }
+    .introduction h3 {
+        font-size: 20px;
+     }
+     .introduction p {
+        font-size: 15px;
+        max-width: 700px;
+        min-width: none;
+     }
+     .contacts {
+        max-width: 450px;
+        min-width: none;
+     }
+     .toggleNav{
+        display: flex;
+        position: fixed;
+    }
+    .navbar, .nav-menu {
+        height: 200px;
+        position: fixed;
+        transition: .3s;
+        background-color: #fcf6f5;
+        padding: 30px 0px;
+        left:-30%;
+        flex-direction: column;
+        overflow: hidden;
+        opacity: 0;
+        top: 70px;
+    }
+    .nav-menu.active, .navbar.active {
+        left: 0%;
+        opacity: 1;
+        top: 70px;
+        justify-content: space-evenly;
+    }
+
 }
