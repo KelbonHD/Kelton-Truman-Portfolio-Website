@@ -78,6 +78,11 @@ p {
     margin: 20px auto 50px auto;
     font-family: "Nunito Sans", "Times New Roman";
  }
+ .top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
  .navbar {
     min-height: 70px;
     display: flex;
@@ -98,40 +103,7 @@ p {
  .navlink:hover {
     font-size: 40px;
  }
- .introduction h3 {
-    font-size: 25px;
- }
- .introduction p {
-    font-size: 20px;
- }
- .about img {
-    width: auto;
-    height: 350px;
-    border-radius: 5px;
- }
- .projects img {
-    width: auto;
-    height: 350px;
-    border-radius: 5px;
- }
-.contacts{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.contact{
-    display: flex;
-    justify-content: center;
-}
-.contact img {
-    width: auto;
-    height: 50px;
-    transition: height 0.2s;
-}
-.contact img:hover {
-    height: 60px;
-}
-.toggleNav {
+ .toggleNav {
     position: relative;
     height: 60px;
     width: 60px;
@@ -175,10 +147,38 @@ p {
 .toggleNav.active span:nth-child(3) {
     transform: translateY(0px) rotate(-45deg);
 }
-.top {
+ .introduction h3 {
+    font-size: 25px;
+ }
+ .introduction p {
+    font-size: 20px;
+ }
+ .about img {
+    width: auto;
+    height: 350px;
+    border-radius: 5px;
+ }
+ .projects img {
+    width: auto;
+    height: 350px;
+    border-radius: 5px;
+ }
+.contacts{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+}
+.contact img {
+    width: auto;
+    height: 50px;
+    transition: height 0.2s;
+}
+.contact img:hover {
+    height: 60px;
 }
 @media(max-width:1100px){
     body {

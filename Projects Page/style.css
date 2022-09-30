@@ -41,6 +41,9 @@ body {
     width: 66%;
     margin: auto;
 }
+main {
+    width: 100%;
+}
 h1 {
     font-family: "Dosis", "Geneva", "Arial";
     font-size: 60px;
@@ -77,6 +80,9 @@ p {
     width: 750px;
     margin: 20px auto 50px auto;
     font-family: "Nunito Sans", "Times New Roman";
+ }
+ footer {
+    padding-top: 50px;
  }
  .top {
     display: flex;
@@ -147,11 +153,106 @@ p {
 .toggleNav.active span:nth-child(3) {
     transform: translateY(0px) rotate(-45deg);
 }
- .mainAbout {
+.allProjects {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
     flex-wrap: wrap;
- }
+}
+.project {
+    flex-basis: 33%;
+}
+.dasmotoPic {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border-color: rgba(0,0,0,0.5);
+    border-style: solid;
+    transition: 0.5s;
+}
+.dasmotoPic:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    width: 530px;
+}
+.title-dasmoto {
+    overflow: hidden;
+    transition: 0.5s;
+    opacity: 0;
+    font-size: 1px;
+}
+.title-dasmoto.hover {
+    opacity: 1;
+    font-size: 30px;
+}
+.excursionPic {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border-color: rgba(0,0,0,0.5);
+    border-style: solid;
+    transition: 0.5s;
+}
+.excursionPic:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    width: 530px;
+}
+.title-excursion {
+    overflow: hidden;
+    transition: 0.5s;
+    opacity: 0;
+    font-size: 1px;
+}
+.title-excursion.hover {
+    opacity: 1;
+    font-size: 30px;
+}
+.teaPic {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border-color: rgba(0,0,0,0.5);
+    border-style: solid;
+    transition: 0.5s;
+}
+.teaPic:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    width: 530px;
+}
+.title-tea {
+    overflow: hidden;
+    transition: 0.5s;
+    opacity: 0;
+    font-size: 1px;
+}
+.title-tea.hover {
+    opacity: 1;
+    font-size: 30px;
+}
+.clubPic {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border-color: rgba(0,0,0,0.5);
+    border-style: solid;
+    transition: 0.5s;
+}
+.clubPic:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    width: 530px;
+}
+.title-club {
+    overflow: hidden;
+    transition: 0.5s;
+    opacity: 0;
+    font-size: 1px;
+}
+.title-club.hover {
+    opacity: 1;
+    font-size: 30px;
+}
 .contacts{
+    padding-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -187,10 +288,6 @@ p {
     p {
         max-width: 700px;
     }
-     .contacts {
-        max-width: 450px;
-        min-width: none;
-     }
      .toggleNav{
         display: flex;
         position: fixed;
@@ -213,5 +310,8 @@ p {
         top: 70px;
         justify-content: space-evenly;
     }
-
+    .contacts {
+        max-width: 450px;
+        min-width: none;
+     }
 }
