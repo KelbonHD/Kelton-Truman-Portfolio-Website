@@ -98,6 +98,10 @@ p {
  .navlink:hover {
     font-size: 40px;
  }
+ .mainAbout {
+    display: flex;
+    flex-wrap: wrap;
+ }
 .contacts{
     display: flex;
     align-items: center;
