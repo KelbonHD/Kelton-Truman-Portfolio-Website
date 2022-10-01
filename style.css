@@ -19,7 +19,7 @@ Fonts:
 }
 html {
         /*First time doing parallax!*/
-        background-image: url(./All\ Media/Home/parallax.jpg);
+        background-image: url(./Media/parallax.jpg);
         padding: 0px;
         min-height: 500px;
         width: 100%;
@@ -56,6 +56,7 @@ h3 {
     font-size: 30px;
 }
 h4  {
+    font-family: "Dosis", 'Times New Roman';
     font-size: 20px;
 }
 nav {
@@ -101,7 +102,7 @@ p {
     font-size: 40px;
  }
  .navlink:hover {
-    font-size: 40px;
+    font-size: 45px;
  }
  .toggleNav {
     position: relative;
@@ -163,6 +164,14 @@ p {
     height: 350px;
     border-radius: 5px;
  }
+ .imageEx, .imageEx2 {
+    transition: 0.5s;
+ }
+ .imageEx.active, .imageEx2.active {
+    height: 380px;
+    width: auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+ }
 .contacts{
     display: flex;
     align-items: center;
@@ -181,11 +190,15 @@ p {
     height: 60px;
 }
 @media(max-width:1100px){
+    html {
+        background-image: none;
+        background-color: #fcf6f5;
+    }
     body {
         width: 100%;
     }
     h1 {
-        font-size: 30px;
+        font-size: 60px;
     }
     h2 {
         font-size: 25px;
@@ -211,6 +224,14 @@ p {
         max-width: 450px;
         min-width: none;
      }
+     .contact img {
+        width: auto;
+        height: 100px;
+     }
+     .contact img:hover{
+        width: auto;
+        height: 120px;
+     }
      .toggleNav{
         display: flex;
         position: fixed;
@@ -233,5 +254,36 @@ p {
         top: 70px;
         justify-content: space-evenly;
     }
+}
 
+@media(max-width:1000px){
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 30px;
+    }
+    .introduction p {
+        font-size: 30px;
+    }
+    .navlink{
+        font-size: 70px;
+    }
+    .navlink:hover {
+        font-size: 75px;
+     }
+    .about img {
+        width: auto;
+        height: 500px;
+    }
+    .projects img {
+        width: auto;
+        height: 500px;
+    }
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Nunito+Sans:wght@700&family=Tai+Heritage+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Nunito+Sans:wght@700&family=Tai+Heritage+Pro&display=swap');@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Nunito+Sans:wght@700&family=Tai+Heritage+Pro&display=swap');
 /* 
 Potential Color Scheme (Could Change Later)
 Dark Navy Blue: #00005a
@@ -148,10 +148,10 @@ p {
 .toggleNav.active span:nth-child(3) {
     transform: translateY(0px) rotate(-45deg);
 }
- .mainAbout {
-    display: flex;
-    flex-wrap: wrap;
- }
+.projPic {
+    height: auto;
+    width: 1000px;
+}
 .contacts{
     display: flex;
     align-items: center;
@@ -209,7 +209,7 @@ p {
         position: fixed;
     }
     .navbar, .nav-menu {
-        height: 200px;
+        height: 300px;
         position: fixed;
         transition: .3s;
         background-color: #fcf6f5;
@@ -235,6 +235,9 @@ p {
     h2 {
         font-size: 50px;
     }
+    h3 {
+        font-size: 40px;
+    }
     p {
         font-size: 30px;
     }
@@ -243,5 +246,9 @@ p {
     }
     .navlink:hover {
         font-size: 75px;
+     }
+     img.projPic {
+        height: auto;
+        width: 800px;
      }
 }

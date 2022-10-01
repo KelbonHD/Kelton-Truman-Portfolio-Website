@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-
-            <h1>Portfolio: Truman, Kelton L.</h1>
-            <h2>My Projects</h2>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../About Page/index.html">About Me</a></li>
-                    <li><a href="Projects Page/index.html">Projects</a></li>
-                    <li><a href="Contacts Page/index.html">Contact Me</a></li>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="../../../index.html" class="nav-about navlink">Home Page</a></li>
+                    <li><a href="../../../About Page/index.html" class="nav-projects navlink">About Me</a></li>
+                    <li><a href="../../index.html" class="nav-projects navlink">Projects</a></li>
                 </ul>
-            </nav>
+            </nav> 
+            <div class="top">
+                <div class="toggleNav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <h1>Portfolio: Truman, Kelton L.</h1>
+            </div>
+            <h2>Project Title Here</h2>
+                <a href="link to site page here"><img src="./Media/expicture.png" class="projPic" alt="Project Example Picture"></a>
+                <h3>Description</h3>
+                    <p>Brief Description of Project goes here. include link afterwards.</p>
         </header>
         <main>
             
         </main>
         <footer>
-
+            <h3>Quick Contacts</h3>
+            <div class="contacts">
+                <p class="contact"><a href="https://www.instagram.com/trumaniac_hd/" target="_blank"><img src="./Media/instalogo.png" alt="Instagram Logo" class="contactImg"></a></p>
+                <p class="contact"><a href="https://www.linkedin.com/in/kelton-truman-414215252" target="_blank"><img src="./Media/linkedinlogo.png" alt="Linked In Logo" class="contactImg"></a></p> 
+            </div>
         </footer>
     </body>
+    <script src="app.js"></script>
 </html>
+
+<!-- Thing to change on the stylesheet:
+ - Probably the Size of the Image.
+ - Description text size depending on how much is written.
+-->

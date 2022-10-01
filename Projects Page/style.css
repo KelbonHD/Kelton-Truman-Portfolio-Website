@@ -19,7 +19,7 @@ Fonts:
 }
 html {
         /*First time doing parallax!*/
-        background-image: url(../All\ Media/Home/parallax.jpg);
+        background-image: url(./Media/parallax.jpg);
         padding: 0px;
         min-height: 500px;
         width: 100%;
@@ -59,6 +59,7 @@ h3 {
     font-size: 30px;
 }
 h4  {
+    font-family: "Dosis", 'Times New Roman';
     font-size: 20px;
 }
 nav {
@@ -107,7 +108,7 @@ p {
     font-size: 40px;
  }
  .navlink:hover {
-    font-size: 40px;
+    font-size: 45px;
  }
  .toggleNav {
     position: relative;
@@ -270,11 +271,15 @@ p {
     height: 60px;
 }
 @media(max-width:1100px){
+    html {
+        background-image: none;
+        background-color: #fcf6f5;
+    }
     body {
         width: 100%;
     }
     h1 {
-        font-size: 30px;
+        font-size: 60px;
     }
     h2 {
         font-size: 25px;
@@ -288,6 +293,70 @@ p {
     p {
         max-width: 700px;
     }
+    .clubPic {
+        width: 700px;
+        height: auto;
+    }
+    .clubPic:hover {
+        width: 730px;
+        height: auto;
+    }
+    .title-club {
+        opacity: 1;
+        font-size: 50px;
+        padding: 30px 0px;
+    }
+    .dasmotoPic {
+        width: 700px;
+        height: auto;
+    }
+    .dasmotoPic:hover {
+        width: 730px;
+        height: auto;
+    }
+    .title-dasmoto {
+        opacity: 1;
+        font-size: 50px;
+        padding: 30px 0px;
+    }
+    .excursionPic {
+        width: 700px;
+        height: auto;
+    }
+    .excursionPic:hover {
+        width: 730px;
+        height: auto;
+    }
+    .title-excursion {
+        opacity: 1;
+        font-size: 50px;
+        padding: 30px 0px;
+    }
+    .teaPic {
+        width: 700px;
+        height: auto;
+    }
+    .teaPic:hover {
+        width: 730px;
+        height: auto;
+    }
+    .title-tea {
+        opacity: 1;
+        font-size: 50px;
+        padding: 30px 0px;
+    }
+     .contacts {
+        max-width: 450px;
+        min-width: none;
+     }
+     .contact img {
+        width: auto;
+        height: 100px;
+     }
+     .contact img:hover{
+        width: auto;
+        height: 120px;
+     }
      .toggleNav{
         display: flex;
         position: fixed;
@@ -310,8 +379,22 @@ p {
         top: 70px;
         justify-content: space-evenly;
     }
-    .contacts {
-        max-width: 450px;
-        min-width: none;
+}
+
+@media(max-width:1000px){
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 30px;
+    }
+    .navlink{
+        font-size: 70px;
+    }
+    .navlink:hover {
+        font-size: 75px;
      }
 }

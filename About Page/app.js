@@ -9,11 +9,3 @@ burgerToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
     barToggle.classList.toggle('active');
 })
-
-function hover(picture) {
-    picture.addEventListener('mouseenter', () => {picture.classList.add('active')});
-    picture.addEventListener('mouseleave', () => {picture.classList.remove('active')});
-};
-
-hover(image);
-hover(image2);

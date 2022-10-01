@@ -14,6 +14,3 @@ function hover(picture) {
     picture.addEventListener('mouseenter', () => {picture.classList.add('active')});
     picture.addEventListener('mouseleave', () => {picture.classList.remove('active')});
 };
-
-hover(image);
-hover(image2);
