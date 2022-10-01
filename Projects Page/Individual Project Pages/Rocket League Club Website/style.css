@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Nunito+Sans:wght@700&family=Tai+Heritage+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Nunito+Sans:wght@700&family=Tai+Heritage+Pro&display=swap');@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Nunito+Sans:wght@700&family=Tai+Heritage+Pro&display=swap');
 /* 
 Potential Color Scheme (Could Change Later)
 Dark Navy Blue: #00005a
@@ -41,9 +41,6 @@ body {
     width: 66%;
     margin: auto;
 }
-main {
-    width: 100%;
-}
 h1 {
     font-family: "Dosis", "Geneva", "Arial";
     font-size: 60px;
@@ -81,9 +78,6 @@ p {
     width: 750px;
     margin: 20px auto 50px auto;
     font-family: "Nunito Sans", "Times New Roman";
- }
- footer {
-    padding-top: 50px;
  }
  .top {
     display: flex;
@@ -154,128 +148,11 @@ p {
 .toggleNav.active span:nth-child(3) {
     transform: translateY(0px) rotate(-45deg);
 }
-.allProjects {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    flex-wrap: wrap;
-}
-.project {
-    flex-basis: 33%;
-}
-.dasmotoPic {
-    width: 500px;
+.projPic {
     height: auto;
-    border-radius: 10px;
-    border-color: rgba(0,0,0,0.5);
-    border-style: solid;
-    transition: 0.5s;
-}
-.dasmotoPic:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    width: 530px;
-}
-.title-dasmoto {
-    overflow: hidden;
-    transition: 0.5s;
-    opacity: 0;
-    font-size: 1px;
-}
-.title-dasmoto.hover {
-    opacity: 1;
-    font-size: 30px;
-}
-.excursionPic {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-    border-color: rgba(0,0,0,0.5);
-    border-style: solid;
-    transition: 0.5s;
-}
-.excursionPic:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    width: 530px;
-}
-.title-excursion {
-    overflow: hidden;
-    transition: 0.5s;
-    opacity: 0;
-    font-size: 1px;
-}
-.title-excursion.hover {
-    opacity: 1;
-    font-size: 30px;
-}
-.teaPic {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-    border-color: rgba(0,0,0,0.5);
-    border-style: solid;
-    transition: 0.5s;
-}
-.teaPic:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    width: 530px;
-}
-.title-tea {
-    overflow: hidden;
-    transition: 0.5s;
-    opacity: 0;
-    font-size: 1px;
-}
-.title-tea.hover {
-    opacity: 1;
-    font-size: 30px;
-}
-.clubPic {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-    border-color: rgba(0,0,0,0.5);
-    border-style: solid;
-    transition: 0.5s;
-}
-.clubPic:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    width: 530px;
-}
-.title-club {
-    overflow: hidden;
-    transition: 0.5s;
-    opacity: 0;
-    font-size: 1px;
-}
-.title-club.hover {
-    opacity: 1;
-    font-size: 30px;
-}
-.portPic {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-    border-color: rgba(0,0,0,0.5);
-    border-style: solid;
-    transition: 0.5s;
-}
-.portPic:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    width: 530px;
-}
-.title-portfolio {
-    overflow: hidden;
-    transition: 0.5s;
-    opacity: 0;
-    font-size: 1px;
-}
-.title-portfolio.hover {
-    opacity: 1;
-    font-size: 30px;
+    width: 1000px;
 }
 .contacts{
-    padding-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -315,71 +192,6 @@ p {
     p {
         max-width: 700px;
     }
-    .clubPic {
-        width: 700px;
-        height: auto;
-    }
-    .clubPic:hover {
-        width: 730px;
-        height: auto;
-    }
-    .title-club {
-        opacity: 1;
-        font-size: 50px;
-        padding: 30px 0px;
-    }
-    .portPic {
-        width: 700px;
-        height: auto;
-    }
-    .portPic:hover {
-        width: 730px;
-        height: auto;
-    }
-    .title-portfolio {
-        opacity: 1;
-        font-size: 50px;
-        padding: 30px 0px;
-    }
-    .dasmotoPic {
-        width: 700px;
-        height: auto;
-    }
-    .dasmotoPic:hover {
-        width: 730px;
-        height: auto;
-    }
-    .title-dasmoto {
-        opacity: 1;
-        font-size: 50px;
-        padding: 30px 0px;
-    }
-    .excursionPic {
-        width: 700px;
-        height: auto;
-    }
-    .excursionPic:hover {
-        width: 730px;
-        height: auto;
-    }
-    .title-excursion {
-        opacity: 1;
-        font-size: 50px;
-        padding: 30px 0px;
-    }
-    .teaPic {
-        width: 700px;
-        height: auto;
-    }
-    .teaPic:hover {
-        width: 730px;
-        height: auto;
-    }
-    .title-tea {
-        opacity: 1;
-        font-size: 50px;
-        padding: 30px 0px;
-    }
      .contacts {
         max-width: 450px;
         min-width: none;
@@ -397,7 +209,7 @@ p {
         position: fixed;
     }
     .navbar, .nav-menu {
-        height: 200px;
+        height: 300px;
         position: fixed;
         transition: .3s;
         background-color: #fcf6f5;
@@ -423,6 +235,9 @@ p {
     h2 {
         font-size: 50px;
     }
+    h3 {
+        font-size: 40px;
+    }
     p {
         font-size: 30px;
     }
@@ -431,5 +246,9 @@ p {
     }
     .navlink:hover {
         font-size: 75px;
+     }
+     img.projPic {
+        height: auto;
+        width: 800px;
      }
 }
