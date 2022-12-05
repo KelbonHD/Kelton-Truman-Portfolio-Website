@@ -274,6 +274,28 @@ p {
     opacity: 1;
     font-size: 30px;
 }
+.primordialPic {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border-color: rgba(0,0,0,0.5);
+    border-style: solid;
+    transition: 0.5s;
+}
+.primordialPic:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    width: 530px;
+}
+.title-primordial {
+    overflow: hidden;
+    transition: 0.5s;
+    opacity: 0;
+    font-size: 1px;
+}
+.title-primordial.hover {
+    opacity: 1;
+    font-size: 30px;
+}
 .contacts{
     padding-top: 50px;
     display: flex;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Nunito+Sans:wght@700&family=Tai+Heritage+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Nunito+Sans:wght@700&family=Tai+Heritage+Pro&display=swap');@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Nunito+Sans:wght@700&family=Tai+Heritage+Pro&display=swap');
 /* 
 Potential Color Scheme (Could Change Later)
 Dark Navy Blue: #00005a
@@ -148,30 +148,10 @@ p {
 .toggleNav.active span:nth-child(3) {
     transform: translateY(0px) rotate(-45deg);
 }
- .introduction h3 {
-    font-size: 25px;
- }
- .introduction p {
-    font-size: 20px;
- }
- .about img {
-    width: auto;
-    height: 350px;
-    border-radius: 5px;
- }
- .projects img {
-    width: auto;
-    height: 350px;
-    border-radius: 5px;
- }
- .imageEx, .imageEx2 {
-    transition: 0.5s;
- }
- .imageEx.active, .imageEx2.active {
-    height: 380px;
-    width: auto;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
- }
+.projPic {
+    height: auto;
+    width: 1000px;
+}
 .contacts{
     display: flex;
     align-items: center;
@@ -212,14 +192,6 @@ p {
     p {
         max-width: 700px;
     }
-    .introduction h3 {
-        font-size: 20px;
-     }
-     .introduction p {
-        font-size: 15px;
-        max-width: 700px;
-        min-width: none;
-     }
      .contacts {
         max-width: 450px;
         min-width: none;
@@ -237,7 +209,7 @@ p {
         position: fixed;
     }
     .navbar, .nav-menu {
-        height: 200px;
+        height: 300px;
         position: fixed;
         transition: .3s;
         background-color: #fcf6f5;
@@ -269,24 +241,14 @@ p {
     p {
         font-size: 30px;
     }
-    .introduction p {
-        font-size: 30px;
-    }
     .navlink{
         font-size: 70px;
     }
     .navlink:hover {
         font-size: 75px;
      }
-    .about img {
-        width: auto;
-        height: 500px;
-    }
-    .projects img {
-        width: auto;
-        height: 500px;
-    }
-    #title {
-        transition: .5s;
-    }
+     img.projPic {
+        height: auto;
+        width: 800px;
+     }
 }
