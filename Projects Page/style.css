@@ -160,6 +160,7 @@ p {
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
+    padding: 20px;
 }
 .project {
     flex-basis: 33%;
@@ -398,6 +399,19 @@ p {
         height: auto;
     }
     .title-tea {
+        opacity: 1;
+        font-size: 50px;
+        padding: 30px 0px;
+    }
+    .primordialPic {
+        width: 700px;
+        height: auto;
+    }
+    .primordialPic:hover {
+        width: 730px;
+        height: auto;
+    }
+    .title-primordial {
         opacity: 1;
         font-size: 50px;
         padding: 30px 0px;
