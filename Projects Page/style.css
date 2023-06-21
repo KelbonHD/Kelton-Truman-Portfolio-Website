@@ -446,6 +446,19 @@ p {
         font-size: 50px;
         padding: 30px 0px;
     }
+    .jammmingPic {
+        width: 700px;
+        height: auto;
+    }
+    .jammmingPic:hover {
+        width: 730px;
+        height: auto;
+    }
+    .title-jammming {
+        opacity: 1;
+        font-size: 50px;
+        padding: 30px 0px;
+    }
      .contacts {
         max-width: 450px;
         min-width: none;
