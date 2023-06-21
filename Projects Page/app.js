@@ -13,6 +13,8 @@ const portPic = document.querySelector('.portPic');
 const portTitle = document.querySelector('.title-portfolio');
 const primordialPic = document.querySelector('.primordialPic');
 const primordialTitle = document.querySelector('.title-primordial');
+const jammmingPic = document.querySelector('.jammmingPic')
+const jammmingTitle = document.querySelector('.title-jammming')
 
 burgerToggle.addEventListener('click', () => {
     burgerToggle.classList.toggle('active');
@@ -31,3 +33,4 @@ hover(teaPic, teaTitle);
 hover(clubPic, clubTitle);
 hover(portPic, portTitle);
 hover(primordialPic, primordialTitle);
+hover(jammmingPic, jammmingTitle);

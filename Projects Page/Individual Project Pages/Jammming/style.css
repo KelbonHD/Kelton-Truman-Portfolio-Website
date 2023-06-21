@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Nunito+Sans:wght@700&family=Tai+Heritage+Pro&display=swap');@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Nunito+Sans:wght@700&family=Tai+Heritage+Pro&display=swap');
+/* 
+Potential Color Scheme (Could Change Later)
+Dark Navy Blue: #00005a
+Perfect Grey: #969696
+White: #ffffff
+Light Blue: #88a4dd
+Fonts:
+"Dosis"
+"Nunito Sans"
+"Tai Heritage Pro"
+*/
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #4e6d9e;
+    box-sizing: border-box;
+}
+html {
+        /*First time doing parallax!*/
+        background-image: url(./Media/parallax.jpg);
+        padding: 0px;
+        min-height: 500px;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+header {
+    width: 100%;
+    padding-top: 30px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcf6f5;
+    width: 66%;
+    margin: auto;
+}
+h1 {
+    font-family: "Dosis", "Geneva", "Arial";
+    font-size: 60px;
+    margin: auto;
+}
+h2 {
+    font-family: "Dosis", "Geneva", "Arial";
+    font-size: 40px;
+    padding: 30px 0px;
+}
+h3 {
+    font-family: "Tai Heritage Pro", "Times New Roman";
+    font-size: 30px;
+}
+h4  {
+    font-family: "Dosis", 'Times New Roman';
+    font-size: 20px;
+}
+nav {
+    margin: auto;
+}
+li {
+    list-style: none;
+    padding: 0px 30px;
+    font-size: 30px;
+}
+a {
+    font-family: "Dosis", "Geneva", "Arial";
+    text-decoration: none;
+}
+a:hover {
+    color: lightblue;
+}
+p {
+    width: 750px;
+    margin: 20px auto 50px auto;
+    font-family: "Nunito Sans", "Times New Roman";
+ }
+ .top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+ .navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+ }
+ .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+ }
+ .navlink {
+    transition: 0.7s ease;
+    font-size: 40px;
+ }
+ .navlink:hover {
+    font-size: 45px;
+ }
+ .toggleNav {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background: #fcf6f5;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    border-radius: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.toggleNav span {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #4e6d9e;
+    border-radius: 5px;
+    transition: 0.15s;
+}
+.toggleNav span:nth-child(1) {
+    transform: translateY(-10px);
+    width: 20px;
+    left: 10px;
+}
+.toggleNav span:nth-child(2) {
+    width: 30px;
+    left: 10px;
+}
+.toggleNav span:nth-child(3) {
+    transform: translateY(10px);
+    width: 40px;
+}
+.toggleNav.active span:nth-child(1) {
+    width: 40px;
+    transform: translateY(0px) rotate(45deg);
+}
+.toggleNav.active span:nth-child(2) {
+    transform: translateX(60px);
+    opacity: 0;
+}
+.toggleNav.active span:nth-child(3) {
+    transform: translateY(0px) rotate(-45deg);
+}
+.projPic {
+    height: auto;
+    width: 1000px;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+}
+.contact img {
+    width: auto;
+    height: 50px;
+    transition: height 0.2s;
+}
+.contact img:hover {
+    height: 60px;
+}
+@media(max-width:1100px){
+    html {
+        background-image: none;
+        background-color: #fcf6f5;
+    }
+    body {
+        width: 100%;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    p {
+        max-width: 700px;
+    }
+     .contacts {
+        max-width: 450px;
+        min-width: none;
+     }
+     .contact img {
+        width: auto;
+        height: 100px;
+     }
+     .contact img:hover{
+        width: auto;
+        height: 120px;
+     }
+     .toggleNav{
+        display: flex;
+        position: fixed;
+    }
+    .navbar, .nav-menu {
+        height: 300px;
+        position: fixed;
+        transition: .3s;
+        background-color: #fcf6f5;
+        padding: 30px 0px;
+        left:-30%;
+        flex-direction: column;
+        overflow: hidden;
+        opacity: 0;
+        top: 70px;
+    }
+    .nav-menu.active, .navbar.active {
+        left: 0%;
+        opacity: 1;
+        top: 70px;
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width:1000px){
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 30px;
+    }
+    .navlink{
+        font-size: 70px;
+    }
+    .navlink:hover {
+        font-size: 75px;
+     }
+     img.projPic {
+        height: auto;
+        width: 800px;
+     }
+}
